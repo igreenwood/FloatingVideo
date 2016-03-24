@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<VideoView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/video_view"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:background="@android:color/holo_blue_dark"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content">
+    <TextureView
+        android:id="@+id/video_view"
+        android:layout_width="300dp"
+        android:layout_height="225dp" />
+    <TextView
+        android:id="@+id/move_button"
+        android:background="@android:color/darker_gray"
+        android:text="m"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="left|top"/>
+    <TextView
+        android:id="@+id/remove_button"
+        android:background="@android:color/darker_gray"
+        android:text="×"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right|top"/>
+    <TextView
+        android:id="@+id/resize_button"
+        android:background="@android:color/darker_gray"
+        android:text="s"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right|bottom"/>
+</FrameLayout>
